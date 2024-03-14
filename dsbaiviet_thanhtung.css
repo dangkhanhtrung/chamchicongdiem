@@ -1,47 +1,68 @@
-body > div:nth-child(1) > button
+body
+{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+div[class="thanhtung-header"]
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0;
+
+    align-items: center;
+    justify-content: center;
+
+    max-width: 85%;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div[class="thanhtung-header"] > *
+{
+    background-color: black;
+    color: white;
+}
+
+div[class="thanhtung-header"] > a
+{
+    height: 100%;
+
+    text-align: center;
+    vertical-align: middle;
+
+    padding: 0;
+}
+
+div[class="thanhtung-header"] > a > p
+{
+    padding: 0;
+}
+
+div[class="thanhtung-header"] > a:hover
+{
+    background-color: orange;
+
+    border: 0;
+
+    transition-duration: 2.5s;
+    transition-timing-function: ease-in-out;
+
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+}
+
+div[class="thanhtung-header"] > button
 {
     display: none;
-
-    background-color: limegreen;
-    border-style: none;
-    border-radius: 20%;
-
-    padding: 10px;
 }
 
-body > div:nth-child(1) > button:hover
+div [class="dsbaiviet"]
 {
-    animation-name: ThanhTung;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-}
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
 
-@keyframes ThanhTung 
-{
-    0%
-    {
-        transform: scale(1);
-    }
-    50%
-    {
-        transform: scale(0.75);
-    }
-    100%
-    {
-        transform: scale(1.25);
-    }     
-}
-
-@media screen and (max-width: 375px)
-{
-    body > div:nth-child(1) > *
-    {
-        display: none;
-    }
-
-    body > div:nth-child(1) > button
-    {
-        display: block;
-    }
+    justify-content: center;
 }
