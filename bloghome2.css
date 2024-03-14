@@ -1,0 +1,91 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.moto-text_system_4 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
+
+.moto-text_system_4 {
+  font-weight: 300;
+  font-style: normal;
+  font-family: 'Merriweather', serif;
+  color: #333870;
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
+
+.moto-text_system_5 {
+  font-weight: 300;
+  font-style: normal;
+  font-family: 'Merriweather', serif;
+  color: #7c8a97;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+}
+
+.moto-text_normal {
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Noto Sans', sans-serif;
+  color: #7c8a97;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.custom-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:#30b5e1 ; 
+  color: #fff; 
+  text-decoration: none;
+  border-radius: 5px; 
+  transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+  background-color: #728186;
+}
+
+.custom-button:active {
+  background-color: #ccc;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+article p {
+  margin-top: 20px;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 10;
+}
+
+
+strong {
+  font-weight: 10;
+}

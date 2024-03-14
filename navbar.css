@@ -1,0 +1,545 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-image: linear-gradient(to right, #000000, #264a8a);
+    transition-duration: .0.4s;
+    padding: 20px 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.navbar h1 {
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    margin-left: 35px;
+}
+
+.topnav li {
+    display: inline-block;
+    margin-right: 35px;
+    position: relative;
+}
+
+.topnav li a {
+    color: #adadad;
+    font-size: 16px;
+    margin-left: 20px;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+}
+
+.topnav li a::before {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background: #fff;
+    transition: .3s;
+}
+
+.topnav li a:hover:before {
+    width: 100%;
+}
+
+.topnav li a:hover {
+    color: #fff;
+}
+
+.topnav li a i {
+    margin: 0px 4px;
+}
+
+.topnav .option li a {
+    display: block;
+    padding: 5px 0px;
+}
+
+.topnav li .option {
+    display: none;
+    position: absolute;
+    background: #000;
+    z-index: 500;
+    box-shadow: 2px 2px 5px #435267;
+    transition: .3s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.topnav li:hover .option {
+    display: block;
+}
+
+#section-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+
+.content {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.tech-content {
+    height: 680px;
+    background-image: url('https://vtv1.mediacdn.vn/2019/10/10/photo-1-15706463929181755249740.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 33.333%;
+}
+
+.tech-content1 {
+    background-image: url('https://static.chotot.com/storage/chotot-kinhnghiem/c2c/2022/01/10c16efa-dien-thoai-chup-anh-dep-1.jpg');
+    height: 680px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 33.333333%;
+}
+
+.tech-content2 {
+    background-image: url('img/mt-2063-home-banner3.jpg');
+    height: 680px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 33.333%;
+}
+
+.space-top {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+.button1 {
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.button-link {
+    font-family: "Noto Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    background-color: #30b5e1;
+    border-color: transparent;
+    color: #f4f5f4;
+    padding: 5px 12px;
+
+}
+
+.button .input {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    transition: .3s;
+    line-height: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    left: 35px;
+}
+
+.review-item {
+    display: flex;
+    /* flex-direction: row;
+    gap: 10px; */
+}
+
+.button .input {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.button .input:hover {
+    background: #4a504c;
+}
+
+.review-item .spacing {
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 20px;
+}
+
+.button .button-link .button-label {
+    font-size: 12px;
+
+}
+
+.text-review {
+    padding-left: 15px;
+    padding-right: 40px;
+    padding-bottom: initial;
+}
+
+.moto-text-content {
+    padding: 0px 1px;
+}
+
+.moto-text-content .text-img a {
+    font-size: 24px;
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    color: #333870;
+}
+
+.moto-text-content .text-img a {
+    transition: .3s;
+}
+
+
+h1 {
+    margin: 0rem;
+}
+
+.moto-text-content::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.moto-text-content .text-img {
+    width: 230px;
+    position: relative;
+    left: 20px;
+}
+
+.moto-text-content .text-img a:hover {
+    color: #30b5e1;
+}
+
+.moto-text-content .text-img .link {
+    border: none;
+    background-color: transparent;
+}
+
+.second {
+    padding-top: 0;
+}
+
+.spacing-text {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.spacing-text .text {
+    font-size: 24px;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #7c8a97;
+    line-height: 1.4;
+    margin: 0px 150px;
+}
+
+.port-gap {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0px 150px; */
+    /* padding: 10px; */
+}
+
+.gap {
+    margin: 0px 138px;
+}
+
+.port-gap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    padding-bottom: 15px;
+}
+
+.introduce-item {
+    display: flex;
+    padding: 0px 15px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.port-gap .introduce-itemw .image-link {
+    border-color: transparent;
+}
+
+.port-gap .introduce-itemw .image-link::before {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.port-gap-heading .port-gap-title {
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+    color: #000308;
+    line-height: 1.4;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.port-gap-heading .port-gap-title a {
+    font-family: "Merriweather", serif;
+    color: #000308;
+    text-align: left;
+    transition: .3s;
+}
+
+.port-gap-heading .port-gap-title a:hover {
+    color: #30b5e1;
+}
+
+.time {
+    padding-left: 15px;
+    padding-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #b0bbd2;
+}
+
+.time i {
+    margin-right: 10px;
+}
+
+.text-normal {
+    line-height: 1.7;
+    color: #7c8a97;
+}
+
+.third {
+    padding-bottom: 0;
+    background-color: #f4f5f4;
+    width: 100%;
+}
+
+.introduce-items {
+    display: flex;
+    padding-bottom: 60px;
+    flex-direction: row;
+}
+
+.caption {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.btn {
+    width: 105px;
+    height: 105px;
+}
+
+.press {
+    font-family: "Merriweather", serif;
+
+}
+
+.length {
+    width: 60%;
+    padding-bottom: 60px;
+}
+
+.input-for-customer {
+    padding: 19px 23px;
+    width: 65%;
+    display: block;
+    border: none;
+    border-radius: 4px;
+}
+
+.input-for-customer {
+    color: #b0bbd2;
+    background-color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.sign-in {
+    margin-top: 80px;
+}
+
+.block {
+    float: right;
+}
+
+.block button {
+    min-width: 184px;
+    padding: 20px 25px;
+    border: none;
+    background-color: #30b5e1;
+    border-radius: 4px;
+    transition: .5s;
+}
+
+.block button span {
+    color: #fff;
+}
+
+.block button:hover {
+    background-color: #7c8a97;
+}
+
+.contents {
+    padding-top: 0;
+}
+
+.tech-content3 {
+    height: 380px;
+    background-image: url('https://minhancomputercdn.com/media/product/10240_lenovo_ideapad_5_pro_16arh7_82sn003gvn_3.jpg');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 25%;
+}
+
+.tech-content4 {
+    height: 380px;
+    background-image: url('https://hoanghamobile.com/tin-tuc/wp-content/uploads/2023/09/Redmi-Note-13.jpg');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 25%;
+}
+
+.tech-content5 {
+    height: 380px;
+    background-image: url('https://product.hstatic.net/1000063620/product/mhm-oppo-reno-8t-trang_9f1524f64cfa465fb36ade8f9ea615a5_1024x1024.jpg');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 25%;
+}
+
+.tech-content6 {
+    height: 380px;
+    background-image: url('https://cdn.tgdd.vn//News/0//laptop-la-gi-760x427.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 25%;
+}
+
+.footer-content {
+    padding-top: 60px;
+    border-bottom: 1px solid #4a504c;
+}
+
+#end-content {
+    background-image: linear-gradient(to right, #000000, #264a8a);
+}
+
+
+.contact .text {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    font-family: "Merriweather", serif;
+    color: #daddda;
+    line-height: 1.2;
+}
+
+.text-1 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 2;
+}
+
+.text-1 a {
+    color: #fff;
+    font-weight: 400;
+    transition: .3s;
+}
+
+.text-1 a:hover {
+    color: #30b5e1;
+}
+
+.balance {
+    width: 25%;
+}
+
+.space-bottom {
+    padding-bottom: 60px;
+}
+
+.privacy {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.privacy .gap p {
+    color: #ffffff3d;
+    font-size: 13px;
+}
+
+.privacy .gap p a {
+    color: #ffffff3d;
+    transition: .3s;
+}
+
+.privacy .gap p a:hover {
+    color: #fff;
+}
+
+.back-to-home {
+    float: right;
+}
+
+.back-to-home a {
+    position: relative;
+    bottom: 120px;
+    padding-right: 40px;
+}
+
+.back-to-home a i {
+    color: #4a504c;
+    border-radius: 50px;
+    font-size: initial;
+    padding: 12px 15px;
+    background: #30b5e1;
+    text-align: center;
+    transition: .3s;
+}
+
+.back-to-home a i:hover {
+    background: #7c8a97;
+}

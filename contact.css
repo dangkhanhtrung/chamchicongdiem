@@ -1,0 +1,323 @@
+.theh1 {
+    font-weight: lighter;
+    color: #333870;
+    font-family: 'Merriweather', serif;
+
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-image: linear-gradient(to right, #000000, #264a8a);
+    transition-duration: .0.4s;
+    padding: 20px 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.navbar h1 {
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    margin-left: 35px;
+}
+
+.topnav li {
+    display: inline-block;
+    margin-right: 35px;
+    position: relative;
+}
+
+.topnav li a {
+    color: #adadad;
+    font-size: 16px;
+    margin-left: 20px;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+}
+
+.topnav li a::before {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background: #fff;
+    transition: .3s;
+}
+
+.topnav li a:hover:before {
+    width: 100%;
+}
+
+.topnav li a:hover {
+    color: #fff;
+}
+
+.topnav li a i {
+    margin: 0px 4px;
+}
+
+.topnav .option li a {
+    display: block;
+    padding: 5px 0px;
+}
+
+.topnav li .option {
+    display: none;
+    position: absolute;
+    background: #000;
+    z-index: 500;
+    box-shadow: 2px 2px 5px #435267;
+    transition: .3s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.topnav li:hover .option {
+    display: block;
+}
+
+#section-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.div1 {
+    padding-top: 100px;
+    width: 1170px;
+    margin-left: 140px;
+}
+
+.ggmap {
+    width: 1170px;
+}
+
+.id1 {
+    display: block;
+}
+
+.phu1,
+.phu2,
+.phu3,
+.phu5,
+.phu6 {
+    display: flex;
+}
+
+.span1,
+.span2,
+.span5,
+.email {
+    font-family: 'Merriweather', serif;
+    font-size: 24px;
+    color: #7c8a97;
+    font-weight: lighter;
+
+}
+
+.span1,
+.span3,
+.span5,
+.email,
+.span8 {
+    width: 30%;
+}
+
+.span2,
+.span4 {
+    width: 70%;
+
+}
+
+.span3,
+.span4 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    padding-top: 10px;
+    font-style: normal;
+}
+
+input {
+    width: 770px;
+    height: 49.6px;
+    padding-left: 30px;
+}
+
+.a {
+    display: block;
+}
+
+.span6,
+.span7 {
+    font-size: 14px;
+    font-family: 'Noto Sans', sans-serif;
+    color: #7c8a97;
+    padding-top: 1px;
+}
+
+.span6:hover,
+.span7:hover {
+    color: #337ab7;
+
+}
+
+.span8 {
+    color: #337ab7;
+
+}
+
+.span8:hover {
+    color: #7c8a97;
+}
+
+.div {
+    display: block;
+
+    padding-top: 10px;
+
+}
+
+.id1 {
+    margin-top: 10px;
+}
+
+button {
+    background-color: #30b5e1;
+    width: 72.45px;
+    height: 49.6px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 350px;
+    margin-top: 10px;
+}
+
+
+p {
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-content {
+    padding-top: 60px;
+    border-bottom: 1px solid #4a504c;
+}
+
+#end-content {
+    margin-top: 50px;
+    background-image: linear-gradient(to right, #000000, #264a8a);
+}
+
+
+.contact .text {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    font-family: "Merriweather", serif;
+    color: #daddda;
+    line-height: 1.2;
+}
+
+.text-1 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 2;
+}
+
+.text-1 a {
+    color: #fff;
+    font-weight: 400;
+    transition: .3s;
+}
+
+.text-1 a:hover {
+    color: #30b5e1;
+}
+
+.balance {
+    width: 25%;
+}
+
+.space-bottom {
+    padding-bottom: 60px;
+}
+
+.privacy {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.privacy .gap p {
+    color: #ffffff3d;
+    font-size: 13px;
+}
+
+.privacy .gap p a {
+    color: #ffffff3d;
+    transition: .3s;
+}
+
+.privacy .gap p a:hover {
+    color: #fff;
+}
+
+.back-to-home {
+    float: right;
+}
+
+.back-to-home a {
+    position: relative;
+    bottom: 120px;
+    padding-right: 40px;
+}
+
+.back-to-home a i {
+    color: #4a504c;
+    border-radius: 50px;
+    font-size: initial;
+    padding: 12px 15px;
+    background: #30b5e1;
+    text-align: center;
+    transition: .3s;
+}
+
+.back-to-home a i:hover {
+    background: #7c8a97;
+}
+
+.gap {
+    margin: 0px 138px;
+}

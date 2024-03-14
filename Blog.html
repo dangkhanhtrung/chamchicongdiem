@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/calendar-dates.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/folder.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+    .blog {
+        font-size: 32px;
+        font-weight: lighter;
+        font-family: "Merriweather", serif;
+    }
+
+    .div {
+        margin-left: 140px;
+        margin-top: 70px;
+
+    }
+
+    .most {
+        font-size: 24px;
+        font-family: "Merriweather", serif;
+        color: #7c8a97;
+        font-weight: lighter;
+    }
+
+    .gg-calendar-dates {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        transform: scale(var(--ggs, 1));
+        width: 18px;
+        height: 18px;
+        border: 2px solid;
+        border-radius: 3px;
+        opacity: 0.4;
+
+    }
+
+    .gg-calendar-dates::after,
+    .gg-calendar-dates::before {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        border-radius: 3px;
+        height: 2px;
+        left: 2px
+    }
+
+    .gg-calendar-dates::before {
+        background: currentColor;
+        width: 2px;
+        box-shadow:
+            4px 0 0, 8px 0 0, 0 4px 0,
+            4px 4px 0, 8px 4px 0;
+        top: 6px
+    }
+
+    .gg-calendar-dates::after {
+        width: 10px;
+        top: -4px;
+        box-shadow: 0 6px 0 0
+    }
+
+    .gg-profile,
+    .gg-profile::after,
+    .gg-profile::before {
+        display: block;
+        box-sizing: border-box;
+        border: 2px solid;
+        border-radius: 100px;
+        opacity: 0.4;
+        top: -1px;
+    }
+
+
+
+    .div2 {
+        display: flex;
+    }
+
+    .div3 {
+        display: flex;
+        float: right;
+        position: absolute;
+        right: 1100px;
+        top: 180px;
+    }
+
+    .gg-folder {
+        transform: scale(var(--ggs, 1));
+        opacity: 0.4;
+    }
+
+    .div4 {
+        margin-top: 3px;
+        display: flex;
+        float: right;
+        position: absolute;
+        right: 800px;
+        top: 180px;
+        color: #7c8a97;
+    }
+
+    .div4:hover {
+        color: #337ab7;
+    }
+
+    .span1:hover {
+        color: #337ab7;
+    }
+
+    a {
+        text-decoration: none;
+        color: #b0bbd2;
+    }
+
+    .p1 {
+        color: #337ab7;
+        font-size: 14px;
+        font-family: "Merriweather", serif;
+    }
+
+    .p1:hover {
+        color: #b0bbd2;
+    }
+
+    .p2 {
+        color: #337ab7;
+        font-size: 14px;
+        font-family: "Merriweather", serif;
+        position: absolute;
+        top: 195px;
+        left: 320px;
+    }
+
+    .p2:hover {
+        color: #b0bbd2;
+    }
+
+    .div5 {
+        width: 1170px;
+        font-size: 14px;
+        font-family: "Merriweather", serif;
+        color: #7c8a97;
+        line-height: 1.5;
+        word-spacing: 4px;
+    }
+
+    p {
+        margin-top: 2px;
+    }
+
+    .anh1 {
+        width: 1170px;
+        height: 244.96px;
+    }
+
+    .div6 {
+        display: flex;
+    }
+
+    .recent {
+        font-size: 24px;
+        color: #000308;
+    }
+
+    .tags {
+        font-size: 24px;
+        color: #000308;
+        position: relative;
+        left: 700px;
+    }
+
+    .anh2 {
+        width: 370px;
+        height: 246.66;
+    }
+
+    .anh3 {
+        width: 370px;
+        height: 246.66;
+        margin-left: 30px;
+    }
+
+    .common {
+        font-size: 24px;
+        color: #434f53;
+        width: 370px;
+        font-family: "Merriweather", serif;
+    }
+
+    .common:hover {
+        color: #337ab7;
+    }
+
+    .method {
+        font-size: 24px;
+        color: #434f53;
+        width: 370px;
+        position: relative;
+        left: 35px;
+        font-family: "Merriweather", serif;
+    }
+
+    .method:hover {
+        color: #337ab7;
+    }
+
+    .div7 {
+        display: flex;
+    }
+
+    .div8 {
+        display: flex;
+    }
+
+    .span2 {
+        position: relative;
+        left: 180px;
+    }
+
+
+    .span3 {
+        position: absolute;
+        left: 550px;
+        top: 2080px;
+    }
+
+    .span4 {
+        position: absolute;
+        left: 800px;
+        top: 2080px;
+    }
+
+    .div9 {
+        display: flex;
+        position: absolute;
+        left: 890px;
+        top: 1780px;
+    }
+
+    li {
+        float: left;
+        list-style-type: none;
+        width: 161.7px;
+        height: 30.56px;
+        background-color: #e7e9e7;
+        text-align: center;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        position: relative;
+        left: 40px;
+        flex-wrap: wrap;
+    }
+
+
+    ul>li:hover {
+        background-color: #5f6265;
+    }
+
+    ul {
+        width: 370px;
+        height: 106.69px;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .div9 ul li a p {
+        color: #464c59;
+        padding-top: 4px;
+    }
+
+
+
+    .div10 {
+        position: absolute;
+        top: 100px;
+        left: 80px;
+    }
+
+    .div10>a {
+        color: #30b5e1;
+        line-height: 2;
+        font-size: 14px;
+        font-family: "Noto Sans", sans-serif;
+    }
+
+    .div10>a:hover {
+        color: #464c59;
+    }
+</style>
+
+<body>
+    <div>
+        <div class="div">
+            <div class="div1">
+                <h1 class="blog">Blog</h1>
+                <h1 class="most">The most common mistakes when managing personal finances</h1>
+            </div>
+            <div class="div2">
+                <i class="gg-calendar-dates"></i>
+                <span style="color: #b0bbd2;">20.07.2020</span>
+            </div>
+            <div class="div3">
+                <i class="gg-profile"></i>
+                <span style="color: #b0bbd2;">Demo User</span>
+            </div>
+            <div class="div4">
+                <i class="gg-folder"></i>
+                <a href=""> <span class="span1">Business consulting</span></a>
+            </div>
+            <div>
+                <a href="">
+                    <p class="p1">Business development</p>
+                </a>
+                <a href="">
+                    <p class="p2">Business finances</p>
+                </a>
+            </div>
+            <div>
+                <img src="https://template108854.motopreview.com/mt-demo/108800/108854/mt-content/uploads/2020/07/mt-2063-blog-img1.jpg"
+                    alt="">
+            </div>
+            <div class="div5">
+                <p>The ability to manage money competently is especially valuable quality in the conditions of financial
+                    crisis, when the purchasing power of the population is shrinking, inflation is rising, and currency
+                    exchange rates are completely unpredictable. Below are the common mistakes related to money affairs
+                    along with financial planning advice to help manage your own finances properly.</p>
+                <p>The budget is the most basic thing in financial planning. It is therefore especially important to be
+                    careful when compiling the budget. To start you have to draw up your own budget for the next month
+                    and only after it you may make a yearly budget.</p>
+                <p>As the basis takes your monthly income, subtract from it such regular expenses as the cost of
+                    housing, transportation, and then select 20-30% on savings or mortgage loan payment.</p>
+                <p>The rest can be spent on living: restaurants, entertainment, etc. If you are afraid of spending too
+                    much, limit yourself in weekly expenses by having a certain amount of ready cash.
+
+                </p>
+                <p>"When people borrow, they think that they should return it as soon as possible," said Sofia Bera, a
+                    certified financial planner and founder of Gen Y Planning company. And at its repayment spend all
+                    that earn. But it's not quite rationally ".</p>
+                <p>If you don't have money on a rainy day, in case of an emergency (e.g. emergency of car repairs) you
+                    have to pay by credit card or get into new debts. Keep on account of at least $1000 in case of
+                    unexpected expenses. And gradually increase the "airbag" to an amount equal to your income for up to
+                    three-six months.</p>
+                <p>"Usually when people plan to invest, they only think about profit and they don't think that loss's
+                    possible", says Harold Evensky, the President of the financial management company Evensky & Katz. He
+                    said that sometimes people do not do basic mathematical calculations.
+
+                    For example, forgetting that if in one year they lost 50%, and the following year they received 50%
+                    of the profits, they did not return to the starting point, and lost 25% savings. Therefore, think
+                    about the consequences. Get ready to any options. And of course, it would be wiser to invest in
+                    several different investment objects.</p>
+            </div>
+            <div>
+                <img class="anh1"
+                    src="https://template108854.motopreview.com/mt-demo/108800/108854/mt-content/uploads/2020/07/mt-2063_blog_disqus.png"
+                    alt="">
+            </div>
+            <div class="div6">
+                <p class="recent">Recent posts</p>
+                <p class="tags">Tags</p>
+            </div>
+            <div>
+                <a href="Blog.html"><img class="anh2"
+                        src="https://template108854.motopreview.com/mt-demo/108800/108854/mt-content/uploads/2020/07/mt-2063-blog-img1.jpg"
+                        alt=""></a>
+                <a href="blogmethod.html"><img class="anh3"
+                        src="https://template108854.motopreview.com/mt-demo/108800/108854/mt-content/uploads/2020/07/mt-2063-blog-img2.jpg"
+                        alt=""></a>
+            </div>
+            <div class="div7">
+                <a href="Blog.html">
+                    <p class="common">The most common mistakes when managing personal finances</p>
+                </a>
+                <a href="blogmethod.html">
+                    <p class="method">Methods of the recruitment</p>
+                </a>
+            </div>
+            <div class="div8">
+                <div>
+                    <span style="color: #b0bbd2;">20.07.2020</span>
+                </div>
+                <div>
+                    <span class="span2" style="color: #b0bbd2;">Demo User</span>
+                </div>
+                <div>
+                    <div>
+                        <span class="span3" style="color: #b0bbd2;">20.07.2020</span>
+                    </div>
+                    <div>
+                        <span class="span4" style="color: #b0bbd2;">Demo User</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="div9">
+                    <ul>
+                        <li>
+                            <a href="bussinessdevelopment.html">
+                                <p>Bussiness development</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="bussinessfinances.html">
+                                <p>Bussiness finances</p>
+                            </a>
+                        </li>
+                        <li style="width: 112.83px;height: 30.56px;">
+                            <a href="Businessnews.html">
+                                <p>Busies news</p>
+                            </a>
+                        </li>
+                        <li style="width: 103.54px;height: 30.56px;">
+                            <a href="Businesstips.html">
+                                <p>Business tips</p>
+                            </a>
+                        </li>
+                        <li style="width: 180.65px;height: 30.56px;">
+                            <a href="Smallbusinessmarketing.html">
+                                <p>Small business marketing</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="div10">
+                        <h1 style="font-weight: lighter;">Categories</h1>
+                        <a href="consulting.html"><span>Business consulting</span></a><br>
+                        <a href="financial.html"><span>Financial management</span></a><br>
+                        <a href="marketing.html"><span>Marketing</span></a><br>
+                        <a href=""> <span>News</span></a><br>
+                        <a href=""><span>Small business</span></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

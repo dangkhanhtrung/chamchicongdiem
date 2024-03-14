@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-image: linear-gradient(to right, #000000, #264a8a);
+    transition-duration: .0.4s;
+    padding: 20px 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.navbar h1 {
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    margin-left: 35px;
+}
+
+.topnav li {
+    display: inline-block;
+    margin-right: 35px;
+    position: relative;
+}
+
+.topnav li a {
+    color: #adadad;
+    font-size: 16px;
+    margin-left: 20px;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+}
+
+.topnav li a::before {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background: #fff;
+    transition: .3s;
+}
+
+.topnav li a:hover:before {
+    width: 100%;
+}
+
+.topnav li a:hover {
+    color: #fff;
+}
+
+.topnav li a i {
+    margin: 0px 4px;
+}
+
+.topnav .option li a {
+    display: block;
+    padding: 5px 0px;
+}
+
+.topnav li .option {
+    display: none;
+    position: absolute;
+    background: #000;
+    z-index: 500;
+    box-shadow: 2px 2px 5px #435267;
+    transition: .3s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.topnav li:hover .option {
+    display: block;
+}
+
+#section-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.content2 {
+    padding-top: 60px;
+}
+
+.space-top2 {
+    margin-top: 140px;
+}
+
+.text-second {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 150px;
+    margin-top: -40px;
+    padding-right: 20px;
+}
+
+.text-second h1 {
+    font-style: normal;
+    font-weight: 300;
+    font-family: "Merriweather", serif;
+    color: #333870;
+    font-size: 32px;
+    line-height: 1.3;
+}
+
+.text-second h2 {
+    font-style: normal;
+    font-weight: 300;
+    font-family: "Merriweather", serif;
+    color: #464c59;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.text-second p {
+    width: 90%;
+    font-weight: 400;
+    font-family: "Merriweather", serif;
+    line-height: 1.7;
+    font-style: normal;
+    color: #7c8a97;
+    font-size: 14px;
+}
+
+.text-second p a {
+    color: #30b5e1;
+    text-decoration: underline;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-content {
+    padding-top: 60px;
+    border-bottom: 1px solid #4a504c;
+}
+
+#end-content {
+    margin-top: 50px;
+    background-image: linear-gradient(to right, #000000, #264a8a);
+}
+
+
+.contact .text {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    font-family: "Merriweather", serif;
+    color: #daddda;
+    line-height: 1.2;
+}
+
+.text-1 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 2;
+}
+
+.text-1 a {
+    color: #fff;
+    font-weight: 400;
+    transition: .3s;
+}
+
+.text-1 a:hover {
+    color: #30b5e1;
+}
+
+.balance {
+    width: 25%;
+}
+
+.space-bottom {
+    padding-bottom: 60px;
+}
+
+.privacy {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.privacy .gap p {
+    color: #ffffff3d;
+    font-size: 13px;
+}
+
+.privacy .gap p a {
+    color: #ffffff3d;
+    transition: .3s;
+}
+
+.privacy .gap p a:hover {
+    color: #fff;
+}
+
+.back-to-home {
+    float: right;
+}
+
+.back-to-home a {
+    position: relative;
+    bottom: 120px;
+    padding-right: 40px;
+}
+
+.back-to-home a i {
+    color: #4a504c;
+    border-radius: 50px;
+    font-size: initial;
+    padding: 12px 15px;
+    background: #30b5e1;
+    text-align: center;
+    transition: .3s;
+}
+
+.back-to-home a i:hover {
+    background: #7c8a97;
+}
+
+.gap {
+    margin: 0px 138px;
+}
