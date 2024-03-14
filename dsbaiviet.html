@@ -3,94 +3,107 @@
         <title>Animal Planet</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
+            .header{
+                width: 100%;
+                height: 60px;
+                background-color: green;
+                display: flex;
+                position: relative;
+            }
+            .tmenu{
+                position: absolute;
+                margin: 15px;
+                transform: translateX(370px);
+            }
             .menu {
                 text-decoration: none;
-                padding: 10px;
+               
+                color: orange;
+                margin: 70px;
+                font-size: 20px;
+                top: 10px;
             }
             .menu:hover {
                 border-bottom-style: solid;
-                border-bottom-color: brown;
-                border-bottom-width: 4px;
+                border-bottom-color: white;
+                border-bottom-width: 2px;
             }
-            .dsbaiviet {
-                display: grid;
-                grid-template-columns: auto auto;
+            
+            .nutbam {
+                margin-left: 250px;
+                margin-top: -30px;
             }
-            .dsbaiviet img {
-                width: 45%;
-                border-radius: 8px;
+            .nutbam2{
+                margin-left: 250px;
+                margin-top: -30px;
             }
-            .baiviet a {
-                padding: 10px;
-                text-decoration: none;
-                background-color: blue;
-                color: white;
-                border-radius: 6px;
-            }
+            
             .nutbam:hover {
-                background-color: chartreuse;
-                color: red;
+                color: orange;
             }
-            .baiviet {
-                margin-bottom: 20px;
-            }
-            @media screen and (max-width: 475px) {
-                div .menu {
-                    font-size: 14px;
-                }
-                .dsbaiviet {
-                    display: inline;
-                    grid-template-columns: auto;
-                }
-                .baiviet a{
-                text-decoration: none;
-                background-color: blue;
-                color: white;
-                border-radius: 6px;
-                display: flex;
-                    align-items: end;
-                    margin-top: 120px;
-                }
-                .baiviet {
+            .main {
                     display: flex;
+                    width: 70%;
+                    margin: auto;
+                 
                 }
-                .baiviet img {
-                    object-fit: cover;
+            
+            .baiviet p{
+                margin-left: 190px;
+                margin-top: -30px;
+            }
+            img{
+                width: 500px;
+                height: 300px;
+                margin: 50px;
+            }
+            @media screen and(max-width:400px){
+                .header{
+                    width: 100px;
                 }
-              
+
             }
         </style>
         <link rel="stylesheet" href="dsbaiviet_thanhtung.css">
     </head>
     <body>
-        <div style="margin-bottom: 20px;">
-            <a class="menu" href="#">Trang chủ</a>
-            <a class="menu" href="#">Động vật có vú</a>
-            <a class="menu" href="#">Chim chóc</a>
-            <a class="menu" href="#">Giới thiệu</a>
-            <button>🔰</button>
-        </div>
-        <div class="dsbaiviet">
-            <div class="baiviet">
-                <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2019/11/4/763881/D1.jpg"/>
-                <p>Gấu trúc là loài động vật hiền lành</p>
-                <a class="nutbam" href="chitietbaiviet.html">Đọc thêm</a>
+        <header class="header" >
+            <div class="tmenu">
+                <a class="menu" href="#">Trang chủ</a>
+                <a class="menu" href="#">Động vật có vú</a>
+                <a class="menu" href="#">Chim chóc</a>
+                <a class="menu" href="#">Giới thiệu</a>
+                <button>🔰</button>
             </div>
-            <div class="baiviet">
-                <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2019/11/4/763881/D1.jpg"/>
-                Gấu trúc là loài động vật hiền lành
-                <a href="chitietbaiviet.html">Đọc thêm</a>
+        </header>
+        <main class>
+            <div class="main">
+                <div class="baiviet">
+                    <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2019/11/4/763881/D1.jpg"/>
+                    <p>Gấu trúc là loài động vật hiền lành</p>
+                    <a class="nutbam" href="chitietbaiviet.html">Đọc thêm</a>
+                </div>
+                <div class="baiviet">
+                    <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2019/11/4/763881/D1.jpg"/>
+                    <p>Gấu trúc là loài động vật hiền lành</p>
+                    <a class="nutbam" href="chitietbaiviet.html">Đọc thêm</a>
+                </div>
             </div>
-            <div class="baiviet">
-                <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2019/11/4/763881/D1.jpg"/>
-                Gấu trúc là loài động vật hiền lành
-                <a href="chitietbaiviet.html">Đọc thêm</a>
+            <div class="main" >
+                <div class="baiviet">
+                    <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2019/11/4/763881/D1.jpg"/>
+                    <p>Gấu trúc là loài động vật hiền lành</p>
+                    <a class="nutbam" href="chitietbaiviet.html">Đọc thêm</a>
+                </div>
+                <div class="baiviet">
+                    <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2019/11/4/763881/D1.jpg"/>
+                    <p>Gấu trúc là loài động vật hiền lành</p>
+                    <a class="nutbam" href="chitietbaiviet.html">Đọc thêm</a>
+                </div>
             </div>
-            <div class="baiviet">
-                <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2019/11/4/763881/D1.jpg"/>
-                Gấu trúc là loài động vật hiền lành
-                <a href="chitietbaiviet.html">Đọc thêm</a>
-            </div>
-        </div>
+        </main>
+        
+
+                
     </body>
 </html>
