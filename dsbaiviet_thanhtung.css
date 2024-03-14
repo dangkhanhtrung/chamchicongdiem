@@ -12,7 +12,8 @@ body > div:nth-child(1) > button
 body > div:nth-child(1) > button:hover
 {
     animation-name: ThanhTung;
-    animation-duration: 3s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
 }
 
@@ -20,11 +21,15 @@ body > div:nth-child(1) > button:hover
 {
     0%
     {
+        transform: scale(1);
+    }
+    50%
+    {
         transform: scale(0.75);
     }
     100%
     {
-        transform: scale(1);
+        transform: scale(1.25);
     }     
 }
 
